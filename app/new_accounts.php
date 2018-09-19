@@ -15,7 +15,15 @@ class new_accounts extends Model
         'sex',
         'address',
         'email',
-        'dob'
+        'isAuthenticated',
+        'account_no'
 
     ];
+
+    public function isActivated(){
+        if ($this->isAuthenticated == '1'){
+            return true;
+        }
+        return false;
+    }
 }

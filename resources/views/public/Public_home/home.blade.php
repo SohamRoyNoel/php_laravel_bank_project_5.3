@@ -21,6 +21,113 @@
                 </div>
             </div>
             <!-- //about top-->
+
+
+
+            @if(session()->has('email'))
+                <div class="w3ls-section services">
+                    <div class="container">
+                        <div class="services-left">
+                            <h4 class="title">Banking Features</h4>
+                            <h5>any time,anywhere.</h5>
+                            <p class="data">You can use the listed features to have a more grip on your account, credit card, net banking also.</p>
+
+                        </div>
+                        <div class="services-right">
+                            <div class="services-grid">
+                                <div class="col-md-2 col-sm-2 col-xs-2 sr-icon">
+                                    <span class="fas fa-plus-square" aria-hidden="true"></span>
+                                </div>
+                                <div class="col-md-10 col-sm-10 col-xs-10 sr-txt">
+                                    <a href=""><h5>Transaction</h5></a>
+                                    <p>Itaque earum rerum hic a sapiente delectus</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="services-grid">
+                                <div class="col-md-2 col-sm-2 col-xs-2 sr-icon">
+                                    <span class="fas fa-credit-card" aria-hidden="true"></span>
+
+                                </div>
+                                <div class="col-md-10 col-sm-10 col-xs-10 sr-txt">
+                                    <a href=""><h5>Credit & Debit Card</h5></a>
+                                    <p>Itaque earum rerum hic a sapiente delectus</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="services-grid">
+                                <div class="col-md-2 col-sm-2 col-xs-2 sr-icon">
+                                    <span class="fas fa-globe-africa" aria-hidden="true"></span>
+                                </div>
+                                <div class="col-md-10 col-sm-10 col-xs-10 sr-txt">
+                                    <a href=""><h5>Online Banking</h5></a>
+                                    <p>Itaque earum rerum hic a sapiente delectus</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="services-grid">
+                                <div class="col-md-2 col-sm-2 col-xs-2 sr-icon">
+                                    <span class="far fa-share-square" aria-hidden="true"></span>
+                                </div>
+                                <div class="col-md-10 col-sm-10 col-xs-10 sr-txt">
+                                    <a href=""><h5>transfer money</h5></a>
+                                    <p>Itaque earum rerum hic a sapiente delectus</p>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="services-grid">
+                                <div class="col-md-2 col-sm-2 col-xs-2 sr-icon">
+                                    <span class="fas fa-file-invoice-dollar" aria-hidden="true"></span>
+                                </div>
+                                <div class="col-md-10 col-sm-10 col-xs-10 sr-txt">
+                                    <a href=""><h5>pay bills</h5></a>
+                                    <p>Itaque earum rerum hic a sapiente delectus</p>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                            <div class="services-grid">
+                                <div class="col-md-2 col-sm-2 col-xs-2 sr-icon">
+                                    <span class="fas fa-wallet" aria-hidden="true"></span>
+                                </div>
+                                <div class="col-md-10 col-sm-10 col-xs-10 sr-txt">
+                                    <a href=""><h5>Loans</h5></a>
+                                    <p>Itaque earum rerum hic a sapiente delectus</p>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                            <div class="services-grid">
+                                <div class="col-md-2 col-sm-2 col-xs-2 sr-icon">
+                                    <span class="fa fa-shopping-cart" aria-hidden="true"></span>
+                                </div>
+                                <div class="col-md-10 col-sm-10 col-xs-10 sr-txt">
+                                    <a href=""><h5>Shop Online</h5></a>
+                                    <p>Itaque earum rerum hic a sapiente delectus</p>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+                            <div class="services-grid">
+                                <div class="col-md-2 col-sm-2 col-xs-2 sr-icon">
+                                    <span class="fas fa-sync" aria-hidden="true"></span>
+                                </div>
+                                <div class="col-md-10 col-sm-10 col-xs-10 sr-txt">
+                                    <a href=""><h5>Currency Exchange</h5></a>
+                                    <p>Itaque earum rerum hic a sapiente delectus</p>
+                                </div>
+                                <div class="clearfix"> </div>
+                            </div>
+
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                </div>
+            @endif
+
+
+
+
+
+
             <!-- about bottom-->
             <div class="about-bottom">
                 <div class="col-md-6 about-w3right">

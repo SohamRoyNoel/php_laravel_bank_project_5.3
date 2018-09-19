@@ -2,50 +2,44 @@
 
 namespace App\Http\Controllers;
 
-use App\superAdmins;
+use App\user_confirm;
 use Illuminate\Http\Request;
 
-class super_admin extends Controller
+class authenticate_acc extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('adminmiddleware');
-
-    }
-
     public function index()
     {
-        return view('superAdmin.super_adds_manager');
+        $cons = user_confirm::all();
+        return view('admin.users.unconfirmed', compact('cons'));
     }
 
     public function create()
     {
-
+        //
     }
 
     public function store(Request $request)
     {
-        superAdmins::create($request->all());
-        return view('superAdmin.super_login');
+        //
     }
 
     public function show($id)
     {
-
+        //
     }
 
     public function edit($id)
     {
-
+        //
     }
 
     public function update(Request $request, $id)
     {
-
+        //
     }
 
     public function destroy($id)
     {
-
+        //
     }
 }

@@ -12,3 +12,16 @@ Route::get('/admin', function (){
 });
 
 Route::resource('/super_admin', 'super_admin');
+
+Route::resource('/user', 'userAllshow');
+
+Route::resource('/confirm', 'authenticate_acc');
+
+Route::resource('/logins', 'loginOut');
+
+Route::get('/redirects', 'loginOut@index');
+
+Route::resource('/manager_adds_admin', 'manager_adds_admin');
+
+
+

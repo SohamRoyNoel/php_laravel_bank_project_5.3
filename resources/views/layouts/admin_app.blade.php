@@ -53,10 +53,10 @@
                         <a href="#"><i class="fas fa-user nav_icon"></i> User<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="grids.html">Existing</a>
+                                <a href="{{route('user.index')}}">Existing</a>
                             </li>
                             <li>
-                                <a href="grids.html">New to confirm</a>
+                                <a href="{{route('confirm.index')}}">New to confirm</a>
                             </li>
                         </ul>
                     </li>
@@ -133,6 +133,7 @@
                             </li>
                         </ul>
                     </li>
+
                     <li>
                         <a href="#"><i class="fab fa-monero nav_icon"></i>Super Manager<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">

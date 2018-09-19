@@ -48,6 +48,8 @@
                     {!! Form::email('email', null, ['class'=>'form-control', 'autocomplete'=>'off', 'placeholder'=>'Your email']) !!}
                 </div>
 
+
+
                 <div class="form-group">
                     {!! Form::submit('Apply For E ASAP', ['class'=>'btn btn-primary']) !!}
                 </div>

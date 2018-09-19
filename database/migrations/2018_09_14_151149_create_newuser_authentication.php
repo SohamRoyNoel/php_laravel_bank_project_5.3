@@ -15,9 +15,9 @@ class CreateNewuserAuthentication extends Migration
     {
         Schema::create('user_confirms', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('new_registered_user_id');
-            $table->string('isAuthenticated');
-            $table->string('byManualAdmin');
+            $table->string('new_registered_user_phone');
+            $table->string('isAuthenticated')->default('1');
+            $table->string('byManualAdmin')->default('Soham');
             $table->timestamps();
         });
     }

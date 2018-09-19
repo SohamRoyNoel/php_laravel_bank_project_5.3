@@ -17,19 +17,28 @@ class newAccount extends Controller
 
     public function create()
     {
-        //
+
     }
 
     public function store(new_account_open_validator $request)
     {
+        $inp['phone']=$request->phone;
+        $inp['aadhaar']=$request->aadhaar;
+        $inp['pan']=$request->pan;
+        $inp['name']=$request->name;
+        $inp['sex']=$request->sex;
+        $inp['address']=$request->address;
+        $inp['account_no']=rand(100000, 100000000);
+        $inp['email']=$request->email;
+        $ac_no = $inp['account_no'];
 
-        $input['new_registered_user_id'] = $request->phone;
-        new_accounts::create($request->all());
-        user_confirm::create($input);
 
-        $random = rand(100000, 500000);
+        // $input['new_registered_user_phone'] = $request->phone;
+        new_accounts::create($inp);
+        // user_confirm::create($input);
 
-        return view('public.Open_Account.new_account_confermation');
+
+        return view('public.Open_Account.new_account_confermation', compact($ac_no));
 
     }
 

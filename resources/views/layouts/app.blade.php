@@ -42,8 +42,14 @@
             <div class="agileits-hdright nav navbar-nav">
                 <div class="header-w3top"><!-- header-top -->
                     <ul class="w3l-nav-top">
-                        <li><i class="fa fa-phone"></i><span> +01 222 111 444 </span></li>
-                        <li><a href="mailto:example@mail.com"><i class="fas fa-envelope"></i><span>  mail@example.com</span></a></li>
+                        @if(session()->has('email'))
+                            <li><i class="fas fa-user"></i><span> {{ session('name')}} </span></li>
+                            <li><a href="mailto:example@mail.com"><i class="fas fa-envelope"></i><span>  {{session('email')}}</span></a></li>
+                            <li><a href="{{route('logins.create')}}"> <i class="fas fa-sign-out-alt"></i></a><span> Logout </span></li>
+                        @else
+                            <li><i class="fa fa-phone"></i><span> +91 8571 85 9685 </span></li>
+                            <li><a href="mailto:example@mail.com"><i class="fas fa-envelope"></i><span>  mail@example.com</span></a></li>
+                        @endif
                     </ul>
                     <div class="clearfix"> </div>
                 </div>
@@ -79,8 +85,10 @@
                     <li><a href="about.html" class="scroll">About</a></li>
                     <li><a href="services.html" class="scroll">Services</a></li>
                     <li><a href="gallery.html" class="scroll">Branches</a></li>
-                    <li><a href="gallery.html" class="scroll">Login/Register</a></li>
-                    <li><a href="{{url('public/new')}}" class="scroll">Open Account</a></li>
+                    @if(!session()->has('email'))
+                        <li><a href="{{route('logins.index')}}" class="scroll">Login/Register</a></li>
+                        <li><a href="{{url('public/new')}}" class="scroll">Open Account</a></li>
+                    @endif
                     <li><a href="contact.html" class="scroll">Contact Us</a></li>
                 </ul>
                 <div class="clearfix"> </div>

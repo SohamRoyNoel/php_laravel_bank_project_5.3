@@ -17,6 +17,8 @@ class AccountHolder extends Migration
             $table->string('name');
             $table->string('sex');
             $table->string('address');
+            $table->string('account_no');
+            $table->string('isAuthenticated');
             $table->string('email')->unique();
 
             $table->timestamps();
